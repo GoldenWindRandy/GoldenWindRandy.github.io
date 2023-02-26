@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>Python笔记：变量和简单数据类型 | 若似月轮终皎洁，     不辞冰雪为卿热</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://goldenwindrandy.github.io//media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://goldenwindrandy.github.io//media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="Python笔记：变量和简单数据类型 | 若似月轮终皎洁，     不辞冰雪为卿热 » Feed" href="https://goldenwindrandy.github.io//atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://goldenwindrandy.github.io//styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="Python笔记：变量和简单数据类型"/>
+    <meta property="og:url" content="https://goldenwindrandy.github.io/post/python-bi-ji-bian-liang/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="若似月轮终皎洁，     不辞冰雪为卿热"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://goldenwindrandy.github.io/">若似月轮终皎洁，     不辞冰雪为卿热</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://goldenwindrandy.github.io//media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://goldenwindrandy.github.io/tag/q_k7mUVG-/" class="tag">Python学习</a>
+            
+        </span>
+            <h1>Python笔记：变量和简单数据类型</h1>
+            <span class="meta">
+            	Posted on
+              2023-02-06，4 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="变量">变量</h1>
+<h2 id="变量的命名">变量的命名</h2>
+<ul>
+<li>只能包含字母、数字和下划线。可以字母或下划线开头，但不能以数字打头。</li>
+<li>变量名不能包含空格，但可以使用下划线来分隔其中的单词。</li>
+<li>不要用Python关键字和函数名用作变量名。</li>
+<li>简短又具有描述性，慎用大写字母I和大写字母O。</li>
+</ul>
+<h1 id="字符串">字符串</h1>
+<p>在Python中，用括号引起的都是字符串。字符串有四种定义方式：</p>
+<p><strong>其中的引号可以是单引号，可以是双引号，也可以是三单引号，三双引号</strong>，这种灵活性可以允许你在字符串中包含引号和撇号，其中三单引号和三双引号可以<strong>跨行</strong>。</p>
+<ul>
+<li>内置的字符串处理函数<br>
+这些字符串处理函数数量较多，不再一一介绍。值得注意的是Python提供的字符使用的是<strong>Unicode编码标准</strong>。
+<ul>
+<li>字符串查找类方法<br>
+<code>find() rfind()</code>结果不存在时返回-1<br>
+<code>index() rindex()</code>结果不存在时抛出异常<br>
+<code>count()</code>返回一个字符串在另一个字符串中出现的次数，不存在则返回0</li>
+<li>字符串分隔类方法<br>
+<code>split() rsplit()</code>可指定最大分隔次数<br>
+<code>partition() rpartition()</code>分隔为三部分</li>
+<li>字符串连接类方法<br>
+<code>join()</code>连接列表中的多个字符串</li>
+<li>字符串大小写转换方法<br>
+使用方法修改字符串的大小写<br>
+<code>title()</code>以首字母大写的方式显示<strong>每个</strong>单词，即将每个单词的首字母都改为大写。<br>
+<code>lower()、upper()、capitalize()</code><br>
+<em>值得一提的是，<code>lower()、upper()</code>等方法并不改变调用对象的值</em>使用方法修改字符串的大小写<br>
+<code>title()</code>以首字母大写的方式显示<strong>每个</strong>单词，即将每个单词的首字母都改为大写。<br>
+<code>lower()、upper()、capitalize()</code><br>
+<em>值得一提的是，<code>lower()、upper()</code>等方法并不改变调用对象的值</em></li>
+<li>字符串替换方法<br>
+<code>replace()</code> 替换所有的字符串，不修改原字符串</li>
+<li>删除空白<br>
+<code>strip() </code>剔除字符串两端的空白<br>
+<code>lstrip()</code> 剔除字符串开头的空白<br>
+<code>rstrip() </code>剔除字符串末尾的空白</li>
+<li>判断字符串是否以指定字符开始或结束方法<br>
+<code>startwith() endwith()</code></li>
+<li>判断字符串类型方法</li>
+<li>字符串排版方法<br>
+相比用这些排版方法，我更喜欢用<code>format()</code>格式化</li>
+</ul>
+</li>
+<li>合并（拼接）字符串<br>
+Python使用加号（<code>+</code>）来合并字符串。<br>
+使用<code>*</code>来复制字符串，比如&quot;Tom*3&quot;，结果为&quot;TomTomTom&quot;。</li>
+<li>使用制表符或换行符来添加空白<br>
+在编程中，空白泛指任何非打印字符，如空格、制表符和换行符。<br>
+要在字符串中添加制表符，可使用字符组合<code>\t</code><br>
+要在字符串中添加换行符，可使用字符组合<code>\n</code></li>
+<li><code>format()</code>格式化<br>
+<code>format()</code>中有多个格式设置项，分别是，<code>填充字符</code>、<code>对齐方式</code>、<code>宽度</code>、<code>小数保留位数</code>。
+<blockquote>
+<p>Eg:&quot;{:*^20}&quot;.format(&quot;Mike&quot;)</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="数字">数字</h1>
+<ul>
+<li>Python使用两个乘号表示乘方运算</li>
+<li><code>str()</code>，它让Python将非字符串值表示为字符串</li>
+<li>内置的数值运算操作符<br>
+<code>//</code> 整数除法 采用<strong>向下取整</strong>的方式<br>
+<code>**</code> 乘方，操作数可以是实数</li>
+<li>math库<br>
+引入math库：<br>
+1、<code>import math</code><br>
+2、<code>from math import&lt;函数名&gt;</code> / <code>from math import *</code><br>
+math库中有四个数学常数和一些数值函数可以使用</li>
+</ul>
+<h1 id="注释">注释</h1>
+<p>在Python中，注释用井号（<code>#</code>）标识，井号后面的内容都会被Python解释器忽略。</p>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://goldenwindrandy.github.io/post/markdown-xiang-guan/">
+              <span class="post-title">
+                Markdown 相关&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://goldenwindrandy.github.io//atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>若似月轮终皎洁，     不辞冰雪为卿热</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+
