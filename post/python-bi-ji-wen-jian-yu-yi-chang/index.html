@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>Python笔记：文件与异常 | 若似月轮终皎洁，     不辞冰雪为卿热</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://goldenwindrandy.github.io//media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://goldenwindrandy.github.io//media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="Python笔记：文件与异常 | 若似月轮终皎洁，     不辞冰雪为卿热 » Feed" href="https://goldenwindrandy.github.io//atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://goldenwindrandy.github.io//styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="Python笔记：文件与异常"/>
+    <meta property="og:url" content="https://goldenwindrandy.github.io/post/python-bi-ji-wen-jian-yu-yi-chang/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="若似月轮终皎洁，     不辞冰雪为卿热"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://goldenwindrandy.github.io/">若似月轮终皎洁，     不辞冰雪为卿热</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://goldenwindrandy.github.io//media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://goldenwindrandy.github.io/tag/q_k7mUVG-/" class="tag">Python学习</a>
+            
+        </span>
+            <h1>Python笔记：文件与异常</h1>
+            <span class="meta">
+            	Posted on
+              2023-02-26，2 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="文件与异常">文件与异常</h1>
+<h2 id="文件操作">文件操作</h2>
+<ul>
+<li>文件的打开与关闭<br>
+<code>file 对象名 = open(文件路径字符串，模式字符)</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>打开模式</th>
+<th>操作方式</th>
+<th>文件不存在时</th>
+<th>是否覆盖写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'a+'</td>
+<td>可读可写</td>
+<td>新建文件</td>
+<td>是</td>
+</tr>
+<tr>
+<td>'r+'</td>
+<td>可读可写</td>
+<td>报错</td>
+<td>是</td>
+</tr>
+<tr>
+<td>'w+'</td>
+<td>可读可写</td>
+<td>新建文件</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>文件的关闭<br>
+<code> file 对象.close()</code></li>
+<li>写文件
+<ul>
+<li><code>write()</code>每次调用都返回写入文件的字符数</li>
+<li><code>writelines()</code>一次性写入多个字符串<br>
+二者均不添加分隔符</li>
+</ul>
+</li>
+<li>读文件
+<ul>
+<li><code>read()</code>读出所有内容作为字符串返回</li>
+<li><code>readline()</code>读出当前行作为字符串返回</li>
+<li><code>readlines()</code>读出所有内容作为列表返回</li>
+</ul>
+</li>
+</ul>
+<h2 id="csv文件操作">CSV文件操作</h2>
+<p><strong>Python有内置的CSV模块来进行CSV文件的读写操作，需要import</strong></p>
+<ul>
+<li><code>with</code>语句<br>
+可以用<code>with</code>语句来打开文件，文件操作结束后自动关闭文件<br>
+<code>with open(文件路径字符串,模式字符) as 文件对象名:文件操作语句</code></li>
+<li>read对象<br>
+<code>reader(reader对象名) = csv.reader(文件对象名)</code></li>
+<li>writer对象<br>
+<code>writer(writer对象名) = csv.writer(文件对象名)</code><br>
+<code>writer.writerrow(,,newline='')</code>第三个参数的设置是为了防止写入后自动插入一个空行<br>
+<code>writerrows()</code>一次可以写入多行</li>
+</ul>
+<h2 id="异常和异常处理">异常和异常处理</h2>
+<ul>
+<li>可以使用<code>try</code>子句开进行异常的捕获和处理。</li>
+</ul>
+<pre><code>try:
+      语句 
+except 异常名称
+    捕获异常时处理
+else:
+    未发生异常时处理
+</code></pre>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://goldenwindrandy.github.io/post/python-bi-ji-han-shu/">
+              <span class="post-title">
+                Python笔记：函数&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://goldenwindrandy.github.io//atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>若似月轮终皎洁，     不辞冰雪为卿热</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

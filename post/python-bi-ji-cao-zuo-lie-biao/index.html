@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>Python笔记：操作列表和元组 | 若似月轮终皎洁，     不辞冰雪为卿热</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://goldenwindrandy.github.io//media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://goldenwindrandy.github.io//media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="Python笔记：操作列表和元组 | 若似月轮终皎洁，     不辞冰雪为卿热 » Feed" href="https://goldenwindrandy.github.io//atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://goldenwindrandy.github.io//styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="Python笔记：操作列表和元组"/>
+    <meta property="og:url" content="https://goldenwindrandy.github.io/post/python-bi-ji-cao-zuo-lie-biao/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="若似月轮终皎洁，     不辞冰雪为卿热"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://goldenwindrandy.github.io/">若似月轮终皎洁，     不辞冰雪为卿热</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://goldenwindrandy.github.io//media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://goldenwindrandy.github.io/tag/q_k7mUVG-/" class="tag">Python学习</a>
+            
+        </span>
+            <h1>Python笔记：操作列表和元组</h1>
+            <span class="meta">
+            	Posted on
+              2023-02-07，4 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="遍历整个列表">遍历整个列表</h1>
+<ul>
+<li>使用for循环来打印魔术师名单中的所有名字：<br>
+<code>magicians = ['alice', 'david', 'carolina'] </code><br>
+<code>for magician in magicians: </code><br>
+<code>print(magician)</code></li>
+</ul>
+<h1 id="避免缩进错误">避免缩进错误</h1>
+<p>Python根据缩进来判断代码行与前一个代码行的关系。<br>
+为避免意外缩进错误，请<strong>只缩进需要缩进的代码。</strong></p>
+<h1 id="创建数值列表">创建数值列表</h1>
+<ul>
+<li>Python函数<code>range()</code>让你能够轻松地<em>生成</em>一系列的数字。<br>
+<code>for value in range(1,5): </code><br>
+<code>print(value) </code><br>
+<strong>这个范围是左闭右开的区间，在编程语言中还是相对常见的</strong></li>
+<li>要创建数字列表，可使用函数<code>list()</code>将<code>range()</code>的结果直接转换为列表。如果将<code>range()</code>作为<code>list()</code>的参数，输出将为一个数字列表。<br>
+<code>numbers = list(range(1,6)) </code><br>
+<code>print(numbers) </code><br>
+这里<code>list()</code>的参数是一个<code>range</code>对象，也可以用来将字符串转换成列表，但是转换结果可能和用户的想象有所区别。</li>
+<li>使用函数range()时，还可<strong>指定步长</strong><br>
+<code>even_numbers = list(range(2,11,2)) </code><br>
+<code>print(even_numbers)</code></li>
+<li>对数字列表执行简单的统计计算<br>
+有几个专门用于处理数字列表的Python函数。<br>
+<code>&gt;&gt;&gt; digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]</code><br>
+<code>&gt;&gt;&gt; min(digits)</code><br>
+<code>0 </code><br>
+<code>&gt;&gt;&gt; max(digits)</code><br>
+<code>9 </code><br>
+<code>&gt;&gt;&gt; sum(digits)</code><br>
+<code>45</code></li>
+<li>列表解析<br>
+列表解析将for循环和创建新元素的代码合并成一行，并自动附加新元素。<br>
+<code>squares = [value**2 for value in range(1,11)] </code><br>
+<code>print(squares) </code></li>
+<li>如果要用<code>input()</code>来创建一个列表的话，可以使用<code>eval()</code>函数来自动转换数据类型。</li>
+</ul>
+<h1 id="使用列表的一部分">使用列表的一部分</h1>
+<p>以处理列表的部分元素——Python称之为<code>切片</code>。</p>
+<ul>
+<li>要创建切片，可指定要使用的第一个元素和最后一个元素的索引。<br>
+<code>players = ['charles', 'martina', 'michael', 'florence', 'eli'] </code><br>
+<code>print(players[0:3]) </code><br>
+<code>players = ['charles', 'martina', 'michael', 'florence', 'eli'] </code><br>
+<code>print(players[-3:]) </code><br>
+<strong>区间范围同样是左闭右开</strong></li>
+<li>遍历切片<br>
+<code>players = ['charles', 'martina', 'michael', 'florence', 'eli'] </code><br>
+<code>print(&quot;Here are the first three players on my team:&quot;) </code><br>
+<code>for player in players[:3]: </code><br>
+<code>print(player.title()) </code></li>
+</ul>
+<h1 id="复制列表">复制列表</h1>
+<p>要复制列表，可<strong>创建一个包含整个列表的<code>切片</code></strong>，方法是同时省略起始索引和终止索引（<code>[:]</code>）。<br>
+这让Python创建一个始于第一个元素，终止于最后一个元素的切片，即复制整个列表。<br>
+<code>my_foods = ['pizza', 'falafel', 'carrot cake']</code><br>
+<code>friend_foods = my_foods[:] </code><br>
+<strong>倘若我们只是简单地将my_foods赋给friend_foods，就不能得到两个列表。</strong><br>
+<code>#这行不通</code><br>
+<code>friend_foods = my_foods</code><br>
+这里将<code>my_foods</code>赋给<code>friend_foods</code>，而不是将<code>my_foods</code>的副本存储到<code>friend_foods</code>这种语法实际上是让Python将新变量<code>friend_foods</code>关联到包含在<code>my_foods</code>中的列表，因此这两个变量都指向同一个列表。</p>
+<blockquote>
+<p>我个人在这理解，如果直接赋值的话，其实就相当于是浅拷贝，而使用全部切片来赋值，相当于是创建了一个新的列表，而后遍历旧列表中的元素，复制到新列表</p>
+</blockquote>
+<h1 id="元组">元组</h1>
+<p>Python将不能修改的值称为不可变的，而不可变的列表被称为<code>元组</code>。</p>
+<ul>
+<li>元组看起来犹如列表，但使用<code>圆括号</code>而不是<code>方括号</code>来标识。<br>
+不带<code>()</code>的多个数据，用<code>,</code>隔开也可以定义元组。<br>
+<strong>值得注意的是，当元组只有一个元素时，一定要在元素后加<code>,</code>，否则Python会把它看作是一个单个的数据。</strong><br>
+<strong>元组是不可变的列表，因此Python指出不能给元组的元素赋值</strong></li>
+<li>遍历元组中的所有值<br>
+和列表一样</li>
+<li>修改元组变量<br>
+虽然不能修改元组的元素，但可以给存储元组的变量赋值。</li>
+<li>转换函数
+<ul>
+<li>元组和列表之间的转换<br>
+<code>tuple()</code>列表转换为元组<br>
+<code>list()</code>元组转换为列表</li>
+<li>字符串和列表之间的转换<br>
+使用<code>list()</code>来转换字符串，<strong>字符串会被拆分成最小单元</strong>。</li>
+<li><code>split()</code><br>
+用指定的分隔符来分隔字符串，并生成列表</li>
+</ul>
+</li>
+</ul>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://goldenwindrandy.github.io/post/python-bi-ji-lie-biao-jian-jie/">
+              <span class="post-title">
+                Python笔记：列表简介&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://goldenwindrandy.github.io//atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>若似月轮终皎洁，     不辞冰雪为卿热</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

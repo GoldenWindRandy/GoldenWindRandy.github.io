@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>Python笔记：列表简介 | 若似月轮终皎洁，     不辞冰雪为卿热</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://goldenwindrandy.github.io//media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://goldenwindrandy.github.io//media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="Python笔记：列表简介 | 若似月轮终皎洁，     不辞冰雪为卿热 » Feed" href="https://goldenwindrandy.github.io//atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://goldenwindrandy.github.io//styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="Python笔记：列表简介"/>
+    <meta property="og:url" content="https://goldenwindrandy.github.io/post/python-bi-ji-lie-biao-jian-jie/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="若似月轮终皎洁，     不辞冰雪为卿热"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://goldenwindrandy.github.io/">若似月轮终皎洁，     不辞冰雪为卿热</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://goldenwindrandy.github.io//media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://goldenwindrandy.github.io/tag/q_k7mUVG-/" class="tag">Python学习</a>
+            
+        </span>
+            <h1>Python笔记：列表简介</h1>
+            <span class="meta">
+            	Posted on
+              2023-02-07，3 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="列表">列表</h1>
+<p>列表由一系列按特定顺序排列的元素组成。<br>
+在Python中，用方括号<code>[]</code>来表示列表，并用逗号来分隔其中的元素。</p>
+<h2 id="访问列表元素">访问列表元素</h2>
+<ul>
+<li>列表是<strong>有序集合</strong>，因此要访问列表的任何元素，只需将该元素的位置或索引告诉Python即可。</li>
+<li>要访问列表元素，可指出列表的名称，再指出元素的索引，并将其放在方括号内。</li>
+<li>在Python中，第一个列表元素的索引为0，而不是1。</li>
+<li>Python为访问最后一个列表元素提供了一种特殊语法。通过将索引指定为-1，可让Python返回最后一个列表元素，这种约定也适用于其他负数索引.</li>
+<li>运算符<code>in</code>和 <code>not in</code><br>
+这两个运算符被称作成员运算符，用来判断指定的元素是否在列表中。</li>
+<li><code>index()</code>方法用来在列表中查找指定的元素，<strong>若存在多个指定元素，则返回最小的索引值</strong>，如果没有的话则会抛出错误，可以预先确认元素是否在列表中。</li>
+<li><code>count()</code>用来统计并返回列表中指定元素的个数，如果没有，则返回0。</li>
+</ul>
+<h2 id="修改-添加和删除元素">修改、添加和删除元素</h2>
+<ul>
+<li>要修改列表元素，可指定列表名和要修改的元素的索引，再指定该元素的新值</li>
+<li>在列表末尾添加元素 <code>append()</code></li>
+<li>在列表中插入元素<code>insert()</code></li>
+<li>使用del语句删除元素 <code>del motorcycles[0] </code></li>
+<li>使用方法<code>pop()</code>删除元素，<code>pop()</code> 会返回被删除的元素<br>
+可以使用<code>pop()</code>来删除列表中任何位置的元素，只需在括号中指定要删除的元素的索引即可：<code>motorcycles.pop(0) </code></li>
+<li>根据值删除元素 如果你只知道要删除的元素的值，可使用方法<code>remove()</code>。<br>
+<strong>方法remove()只删除第一个指定的值。如果要删除的值可能在列表中出现多次，就需要使用循环来判断是否删除了所有这样的值。</strong></li>
+</ul>
+<h2 id="组织列表">组织列表</h2>
+<ul>
+<li>使用方法<code>sort()</code>对列表进行<strong>永久性排序</strong><br>
+可通过向<code>sort()</code>方法传递参数<code>reverse=True</code>，实现反向排序：<code>cars.sort(reverse=True)</code></li>
+<li>使用函数<code>sorted()</code>对列表进行<strong>临时排序</strong><br>
+也可向函数<code>sorted()</code>传递参数<code>reverse=True。</code></li>
+<li>倒着打印列表<br>
+要反转列表元素的排列顺序，可使用方法<code>reverse()</code>:<code>cars.reverse() </code><br>
+方法<code>reverse()</code><strong>永久性</strong>地修改列表元素的排列顺序，但可随时恢复到原来的排列顺序，为此只需对列表再次调用<code>reverse()</code>即可</li>
+<li>确定列表的长度<br>
+使用函数<code>len()</code>可快速获悉列表的长度。</li>
+</ul>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://goldenwindrandy.github.io/post/python-bi-ji-bian-liang/">
+              <span class="post-title">
+                Python笔记：变量和简单数据类型&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://goldenwindrandy.github.io//atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>若似月轮终皎洁，     不辞冰雪为卿热</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

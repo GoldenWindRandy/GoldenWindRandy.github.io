@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>Python笔记：字典和集合 | 若似月轮终皎洁，     不辞冰雪为卿热</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://goldenwindrandy.github.io//media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://goldenwindrandy.github.io//media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="Python笔记：字典和集合 | 若似月轮终皎洁，     不辞冰雪为卿热 » Feed" href="https://goldenwindrandy.github.io//atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://goldenwindrandy.github.io//styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="Python笔记：字典和集合"/>
+    <meta property="og:url" content="https://goldenwindrandy.github.io/post/python-bi-ji-zi-dian/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="若似月轮终皎洁，     不辞冰雪为卿热"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://goldenwindrandy.github.io/">若似月轮终皎洁，     不辞冰雪为卿热</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://goldenwindrandy.github.io//media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://goldenwindrandy.github.io/tag/q_k7mUVG-/" class="tag">Python学习</a>
+            
+        </span>
+            <h1>Python笔记：字典和集合</h1>
+            <span class="meta">
+            	Posted on
+              2023-02-10，5 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="使用字典">使用字典</h1>
+<ul>
+<li>在Python中，字典是一系列<code>键—值对</code>。每个键都与一个值相关联，你可以使用键来访问与之相关联的值。<strong>可将任何Python对象用作字典中的值。</strong></li>
+<li>在Python中，字典用放在花括号<code>{}</code>中的一系列<code>键—值对</code>表示<br>
+<code>alien_0 = {'color': 'green', 'points': 5} </code><br>
+可以直接创建字典，也可以用内置函数<code>dict()</code>来创建字典。这个函数的参数是<strong>存储双元素的元组或者列表。</strong></li>
+<li>访问字典中的值<br>
+<code>alien_0 = {'color': 'green'} </code><br>
+<code>print(alien_0['color']) </code></li>
+<li>添加<code>键—值对</code><br>
+字典是一种动态结构，可随时在其中添加<code>键—值对</code>。要添加<code>键—值对</code>，可依次指定字典名、用方括号括起的键和相关联的值。<br>
+<strong><code>键—值对</code>的排列顺序与添加顺序不同。Python不关心<code>键—值对</code>的添加顺序，<br>
+而只关心键和值之间的关联关系。</strong> 这或许是因为字典存储时的数据结构。</li>
+</ul>
+<blockquote>
+<p>如果之前有其他编程语言的经验，可能会觉得Python中添加键值对有点过于直白了，它只需要直接指定字典名和键值对。</p>
+</blockquote>
+<ul>
+<li>修改字典中的值<br>
+要修改字典中的值，可依次指定字典名、用方括号括起的键以及与该键相关联的新值。</li>
+<li>删除键—值对<br>
+对于字典中不再需要的信息，可使用del语句将相应的键—值对彻底删除。<br>
+<code> del alien_0['points']</code><br>
+<code>pop(键，默认值)</code>如果键不存在，就弹出默认值，否则删除不存在的条目时，会报错。<br>
+<code>clear()</code>清空字典条目<br>
+<code>del 字典名</code> 直接删除整个字典</li>
+<li>查找字典条目
+<ul>
+<li>成员运算符<code>in</code></li>
+<li><code>get(键，默认值)</code> 不存在则返回默认值，不给出默认值则不返回任何信息</li>
+</ul>
+</li>
+</ul>
+<h1 id="遍历字典">遍历字典</h1>
+<ul>
+<li>遍历所有的键—值对<br>
+<code>user_0 = {  'username': 'efermi',  'first': 'enrico',  'last': 'fermi',  } </code><br>
+<code>for key, value in user_0.items():</code><br>
+<code>print(&quot;\nKey: &quot; + key) </code><br>
+<code>print(&quot;Value: &quot; + value) </code><br>
+方法<code>items()</code>，它返回一个<code>键—值对</code>列表</li>
+<li>遍历字典中的所有键<br>
+<code>for name in favorite_languages.keys(): </code><br>
+<code>print(name.title()) </code><br>
+方法<code>keys()</code>返回一个列表，其中包含字典中的<strong>所有键</strong></li>
+<li>按顺序遍历字典中的所有键<br>
+获取字典的元素时，<strong>获取顺序是不可预测的</strong><br>
+可使用函数<code>sorted()</code>来获得按特定顺序排列的键列表的副本:<br>
+<code>for name in sorted(favorite_languages.keys()): </code><br>
+<code>print(name.title() + &quot;, thank you for taking the poll.&quot;)</code></li>
+<li>遍历字典中的所有值<br>
+方法<code>values()</code>，它返回一个值列表<br>
+<code>for language in favorite_languages.values(): </code><br>
+<code>print(language.title())</code><br>
+为剔除重复项，可使用集合（<code>set</code>）。<br>
+集合类似于列表，但每个元素都必须是<strong>独一无二的</strong><br>
+<code>for language in set(favorite_languages.values()): </code><br>
+<code>print(language.title()) </code></li>
+</ul>
+<h1 id="字典合并">字典合并</h1>
+<ul>
+<li>使用<code>for</code>循环逐个合并</li>
+<li>使用字典的<code>update()</code>方法</li>
+<li>使用<code>dict()</code>方法<br>
+可以手动创建双元素的列表/元组，也可用另一种形式：<code>dicAreas = dict(dicAreas,**dicOthers)</code></li>
+<li>如果两个字典中存在相同的key，那么只会保留一个key</li>
+</ul>
+<h1 id="嵌套">嵌套</h1>
+<h2 id="字典列表">字典列表</h2>
+<p>创建一个列表，其中每一个元素都是一个字典。比如创建一个外星人联队，每一个元素都包含着一个外星人的各项信息的字典。</p>
+<h2 id="在字典中存储列表">在字典中存储列表</h2>
+<p>如上文所说，字典的<code>值</code>可以是Python中的任意数据类型，我们可以把列表存储在字典中。</p>
+<h2 id="字典中嵌套字典">字典中嵌套字典</h2>
+<p>假如要建立一个用户信息存储系统，可以把用户ID作为<code>键</code>，把用户的各项信息编写成一个字典作为<code>值</code></p>
+<h1 id="集合">集合</h1>
+<p>存放一组无序且互不相同的元素。</p>
+<h2 id="集合的创建和访问">集合的创建和访问</h2>
+<ul>
+<li>在<code>大括号</code>里放元素<br>
+<code>set1 = {1,2,3},</code></li>
+<li>使用<code>set(),</code>函数创建集合</li>
+<li>集合的访问<br>
+集合是无序的，也没有<code>键值对</code>，所以要么整体输出，要么使用<code>for</code>循环实现遍历。</li>
+</ul>
+<h2 id="集合的基本操作">集合的基本操作</h2>
+<ul>
+<li>添加元素<br>
+<code>add()</code>参数必须是<strong>不可变的数据</strong>，如果是序列，则将序列整体作为一个元素加入集合<br>
+<code>update()</code>参数序列中的元素拆分<strong>去重</strong>后加入集合，参数<strong>可以是可变的数据</strong></li>
+<li>删除元素<br>
+<code>remove()</code>如果元素不存在，会报错<br>
+<code>discard()</code>如果元素不存在，系统将正常执行，无任何输出<br>
+<code>clear()</code>清空</li>
+<li>成员判断<br>
+<code>in</code></li>
+</ul>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://goldenwindrandy.github.io/post/python-bi-ji-if-yu-ju/">
+              <span class="post-title">
+                Python笔记：IF语句&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://goldenwindrandy.github.io//atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>若似月轮终皎洁，     不辞冰雪为卿热</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

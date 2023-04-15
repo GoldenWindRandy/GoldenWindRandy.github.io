@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>Python笔记：用户输入和while循环 | 若似月轮终皎洁，     不辞冰雪为卿热</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://goldenwindrandy.github.io//media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://goldenwindrandy.github.io//media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="Python笔记：用户输入和while循环 | 若似月轮终皎洁，     不辞冰雪为卿热 » Feed" href="https://goldenwindrandy.github.io//atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://goldenwindrandy.github.io//styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="Python笔记：用户输入和while循环"/>
+    <meta property="og:url" content="https://goldenwindrandy.github.io/post/python-bi-ji-yong-hu-shu-ru-he-while-xun-huan/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="若似月轮终皎洁，     不辞冰雪为卿热"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://goldenwindrandy.github.io/">若似月轮终皎洁，     不辞冰雪为卿热</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://goldenwindrandy.github.io//media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://goldenwindrandy.github.io/tag/q_k7mUVG-/" class="tag">Python学习</a>
+            
+        </span>
+            <h1>Python笔记：用户输入和while循环</h1>
+            <span class="meta">
+            	Posted on
+              2023-02-16，2 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="用户输入">用户输入</h1>
+<h2 id="函数input的工作原理">函数<code>input()</code>的工作原理</h2>
+<ul>
+<li>函数<code>input()</code>让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，以方便你使用。</li>
+<li>函数<code>input()</code>接受一个参数：即要向用户显示的提示或说明，让用户知道该如何做。<br>
+<code>message = input(&quot;Tell me something, and I will repeat it back to you: &quot;)  print(message) </code></li>
+</ul>
+<h2 id="使用-int来获取数值输入">使用 <code>int()</code>来获取数值输入</h2>
+<p>使用函数<code>input()</code>时，Python将用户输入解读为字符串。</p>
+<h2 id="求模运算符">求模运算符</h2>
+<h1 id="while循环简介"><code>while循环</code>简介</h1>
+<ul>
+<li>
+<p>和<code>C++ </code>不同的是，<code>Python</code>中的循环结构可以设置一个else语句，也就是当条件不成立的时候，在退出循环前会执行else语句，<code>break</code>退出循环时除外。</p>
+</li>
+<li>
+<p><code>while循环</code>感觉没什么好说的，下边给出一些<code>字典</code>和<code>列表</code>中用到<code>while循环</code>的例子：</p>
+</li>
+<li>
+<p><em>如下是一个删除列表中特定元素的循环</em><br>
+<code>pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat'] </code><br>
+<code>print(pets) </code><br>
+<code>while 'cat' in pets:</code><br>
+<code>pets.remove('cat') </code><br>
+<code>print(pets) </code></p>
+</li>
+<li>
+<p><em>也可以使用循环来向字典中填充元素</em><br>
+<code>responses = {} </code><br>
+<code># 设置一个标志，指出调查是否继续</code><br>
+<code>polling_active = True </code><br>
+<code>while polling_active: </code><br>
+<code># 提示输入被调查者的名字和回答</code><br>
+<code>name = input(&quot;\nWhat is your name? &quot;) </code><br>
+<code>response = input(&quot;Which mountain would you like to climb someday? &quot;)  </code><br>
+<code># 将答卷存储在字典中</code><br>
+<code>responses[name] = response </code><br>
+<code># 看看是否还有人要参与调查</code><br>
+<code>repeat = input(&quot;Would you like to let another person respond? (yes/ no) &quot;) </code><br>
+<code>if repeat == 'no': </code><br>
+<code>polling_active = False </code><br>
+<code># 调查结束，显示结果</code><br>
+<code>print(&quot;\n--- Poll Results ---&quot;) </code><br>
+<code>for name, response in responses.items(): </code><br>
+<code>print(name + &quot; would like to climb &quot; + response + &quot;.&quot;) </code></p>
+</li>
+</ul>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://goldenwindrandy.github.io/post/python-bi-ji-zi-dian/">
+              <span class="post-title">
+                Python笔记：字典和集合&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://goldenwindrandy.github.io//atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>若似月轮终皎洁，     不辞冰雪为卿热</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://goldenwindrandy.github.io//media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

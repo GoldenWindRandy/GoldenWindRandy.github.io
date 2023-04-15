@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://goldenwindrandy.github.io/</id>
+    <title>若似月轮终皎洁，     不辞冰雪为卿热</title>
+    <updated>2023-04-15T09:49:47.490Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://goldenwindrandy.github.io/"/>
+    <link rel="self" href="https://goldenwindrandy.github.io/atom.xml"/>
+    <subtitle>凌晨四点钟，我看见海棠花未眠。总觉得这时，你应该在我身边。
+——川端康成《花未眠》</subtitle>
+    <logo>https://goldenwindrandy.github.io/images/avatar.png</logo>
+    <icon>https://goldenwindrandy.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 若似月轮终皎洁，     不辞冰雪为卿热</rights>
+    <entry>
+        <title type="html"><![CDATA[Excel快捷键]]></title>
+        <id>https://goldenwindrandy.github.io/post/excel-kuai-jie-jian/</id>
+        <link href="https://goldenwindrandy.github.io/post/excel-kuai-jie-jian/">
+        </link>
+        <updated>2023-04-13T02:34:38.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="使用功能区选项卡的访问键">使用功能区选项卡的访问键</h1>
+<pre><code>Alt+F转到文件
+Alt+H转到开始
+Alt+H,H选择填充颜色
+Alt+H,A,C居中对齐单元格内容
+Alt+H,B添加边框
+Alt+N转到插入
+Alt+P转到页面布局
+Alt+A转到数据
+Alt+W转到视图
+Alt+M转到公式
+</code></pre>
+<p>#通过键盘使用功能区<br>
+Alt 选择功能区上的活动选项卡<br>
+Ctrl+F1 展开或收起功能区<br>
+Fn + right Ctrl 打开上下文菜单</p>
+<p>#用于单元格导航的键盘快捷方式<br>
+Shift + Tab 移到工作表中的前一个单元格或对话框中的前一个选项<br>
+Ctrl+箭头键 移到工作表中当前数据区域的边缘<br>
+Ctrl + End 移到工作表上的最后一个单元格，即所使用的最右一列的最下面一行<br>
+Ctrl +Home 移到工作表的开头<br>
+Ctrl +Shift +End  将单元格选定区域扩展至工作表上最后一个使用的单元格（右下角）<br>
+Ctrl +Page up / Ctrl +Page down 在工作薄的工作表中切换<br>
+Ctrl+Shift，然后向上滚动鼠标滚轮水平向左、向下滚动以水平向右<br>
+Ctrl +Alt + =/- 放大或缩小</p>
+<p>#用于单元格格式设置的键盘快捷方式<br>
+Ctrl+1 打开“ 设置单元格格式 ”对话框<br>
+Ctrl +Shift +P 在“设置 单元格格式 ”对话框中设置字体格式<br>
+Ctrl+Shift+冒号 (😃 输入当前时间<br>
+Ctrl+分号 (😉 输入当前日期<br>
+Ctrl +Alt +V 打开“ 选择性粘贴 ”对话框<br>
+Ctrl +I 或 Ctrl+3 将文本设置为斜体或删除倾斜格式<br>
+Ctrl +B 或 Ctrl+2 将文本设置为加粗或删除加粗格式<br>
+Ctrl +U 或 Ctrl+4 为文字添加下划线或删除下划线<br>
+Ctrl +D 使用 “向下填充” 命令将所选区域最顶层单元格的内容和格式复制到下面的单元格中<br>
+Ctrl+Shift+波形符符号 (~)应用 常规 数字格式<br>
+Ctrl+Shift+数字符号 (#) 使用日、月和年应用 日期 格式<br>
+Ctrl +L 或 Ctrl +T 显示“ 创建表 ”对话框</p>
+<p>#进行选择并执行操作的键盘快捷方式<br>
+Shift+箭头键 将单元格的选定范围扩大一个单元格<br>
+Ctrl+Shift+箭头键 将单元格的选定范围扩展到活动单元格所在列或行中的最后一个非空单元格，或者如果下一个单元格为空，则扩展到下一个非空单元格<br>
+Shift +Enter 完成单元格输入并选择上面的单元格<br>
+Ctrl +空格键 选择工作表中的整列<br>
+Shift +空格键 选择工作表中的整行<br>
+Ctrl +Y 重复上一个命令或操作（如有可能）</p>
+<p>#用于处理数据、函数和编辑栏的键盘快捷方式<br>
+Ctrl +Shift +End 选择编辑栏中从光标所在的位置到结尾的所有文本<br>
+Alt+F1 在当前范围中创建数据的嵌入图表<br>
+F11 在单独的“图表”工作表中创建当前区域中数据的 图表</p>
+<p>#功能键<br>
+F1<br>
+Alt+F1：在当前区域中创建数据的嵌入图表<br>
+Alt+Shift+F1：插入新的工作表<br>
+Ctrl+Shift+F1：切换全屏模式<br>
+F4<br>
+Ctrl+F4：关闭选定的工作簿窗口<br>
+Alt+F4：关闭 Excel<br>
+F10<br>
+Shift+F10：显示所选项的上下文菜单（同右Ctrl）<br>
+Ctrl+F10：界面在最大化和窗口之间切换<br>
+F11<br>
+Shift+F11：插入一个新工作表<br>
+F12<br>
+F12（单独使用）：显示“另存为”对话框</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：文件与异常]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-wen-jian-yu-yi-chang/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-wen-jian-yu-yi-chang/">
+        </link>
+        <updated>2023-02-26T14:33:57.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="文件与异常">文件与异常</h1>
+<h2 id="文件操作">文件操作</h2>
+<ul>
+<li>文件的打开与关闭<br>
+<code>file 对象名 = open(文件路径字符串，模式字符)</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>打开模式</th>
+<th>操作方式</th>
+<th>文件不存在时</th>
+<th>是否覆盖写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'a+'</td>
+<td>可读可写</td>
+<td>新建文件</td>
+<td>是</td>
+</tr>
+<tr>
+<td>'r+'</td>
+<td>可读可写</td>
+<td>报错</td>
+<td>是</td>
+</tr>
+<tr>
+<td>'w+'</td>
+<td>可读可写</td>
+<td>新建文件</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>文件的关闭<br>
+<code> file 对象.close()</code></li>
+<li>写文件
+<ul>
+<li><code>write()</code>每次调用都返回写入文件的字符数</li>
+<li><code>writelines()</code>一次性写入多个字符串<br>
+二者均不添加分隔符</li>
+</ul>
+</li>
+<li>读文件
+<ul>
+<li><code>read()</code>读出所有内容作为字符串返回</li>
+<li><code>readline()</code>读出当前行作为字符串返回</li>
+<li><code>readlines()</code>读出所有内容作为列表返回</li>
+</ul>
+</li>
+</ul>
+<h2 id="csv文件操作">CSV文件操作</h2>
+<p><strong>Python有内置的CSV模块来进行CSV文件的读写操作，需要import</strong></p>
+<ul>
+<li><code>with</code>语句<br>
+可以用<code>with</code>语句来打开文件，文件操作结束后自动关闭文件<br>
+<code>with open(文件路径字符串,模式字符) as 文件对象名:文件操作语句</code></li>
+<li>read对象<br>
+<code>reader(reader对象名) = csv.reader(文件对象名)</code></li>
+<li>writer对象<br>
+<code>writer(writer对象名) = csv.writer(文件对象名)</code><br>
+<code>writer.writerrow(,,newline='')</code>第三个参数的设置是为了防止写入后自动插入一个空行<br>
+<code>writerrows()</code>一次可以写入多行</li>
+</ul>
+<h2 id="异常和异常处理">异常和异常处理</h2>
+<ul>
+<li>可以使用<code>try</code>子句开进行异常的捕获和处理。</li>
+</ul>
+<pre><code>try:
+      语句 
+except 异常名称
+    捕获异常时处理
+else:
+    未发生异常时处理
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：函数]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-han-shu/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-han-shu/">
+        </link>
+        <updated>2023-02-26T14:04:14.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="函数">函数</h1>
+<h2 id="定义函数">定义函数</h2>
+<p>我们用一个代码样例来展示函数的定义语法：<br>
+<code>def greet_user(): </code><br>
+<code>&quot;&quot;&quot;显示简单的问候语&quot;&quot;&quot;</code><br>
+<code>print(&quot;Hello!&quot;) </code><br>
+向函数传递信息：实参和形参</p>
+<h2 id="传递参数">传递参数</h2>
+<p>函数的参数概念和C++的很相似，基本没有什么区别</p>
+<table>
+<thead>
+<tr>
+<th>传参方式</th>
+<th>tips</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>位置实参</td>
+<td>传参顺序和形参位置相对应</td>
+</tr>
+<tr>
+<td>关键字实参</td>
+<td>通过关键词来对应参数关系</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>默认值参数要放在最后,可以显式地覆盖参数的默认值</td>
+</tr>
+<tr>
+<td>可变参数</td>
+<td>使用带<code>*</code>的参数，意味着可以传递可变数量的参数</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>只要参数的对应关系相同，那么函数的调用就是等价的。</li>
+<li>在可变参数中，使用一个<code>*</code>，参数会被收集成一个<code>元组</code>，使用两个<code>*</code>，参数会被收集成一个<code>字典</code></li>
+<li>函数的参数是<code>可变对象</code>（<code>比如列表</code>）时，这时传递的参数是<code>可变对象</code>的引用，可以直接修改原参数。</li>
+</ul>
+<h2 id="返回值">返回值</h2>
+<ul>
+<li>返回简单值<br>
+同样用<code>return</code>来实现，不同的地方是在Python中不需要在函数头中指出返回值的类型<br>
+如果要返回多个值，则可以返回一个元组。</li>
+<li>让实参变成可选的<br>
+给实参一个空的默认值，在函数体内通过<code>if</code>语句来判断是否给这个参数覆盖了新值，然后分情况编写代码。</li>
+</ul>
+<h2 id="lambda函数">Lambda函数</h2>
+<ul>
+<li><code>Lambda()</code>实际上是生成了一个匿名函数的函数对象<br>
+语法为：<br>
+<code> lambda 参数1，参数2，……: &lt;函数语句&gt;</code></li>
+<li><code>filter()</code>函数用于过滤序列，过滤掉不符合条件的元素，返回由符合条件的元素组成的新序列。它会接受两个参数，第一个是函数，第二个是序列。序列中的元素会遍历传递给函数判断，返回值为<code>True</code>的元素会存放在新的列表中。</li>
+</ul>
+<h2 id="变量的作用域">变量的作用域</h2>
+<ul>
+<li>全局变量和局部变量同名时，局部变量会屏蔽全局变量，可以使用关键字<code>global</code>来访问全局变量。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：用户输入和while循环]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-yong-hu-shu-ru-he-while-xun-huan/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-yong-hu-shu-ru-he-while-xun-huan/">
+        </link>
+        <updated>2023-02-15T17:37:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="用户输入">用户输入</h1>
+<h2 id="函数input的工作原理">函数<code>input()</code>的工作原理</h2>
+<ul>
+<li>函数<code>input()</code>让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，以方便你使用。</li>
+<li>函数<code>input()</code>接受一个参数：即要向用户显示的提示或说明，让用户知道该如何做。<br>
+<code>message = input(&quot;Tell me something, and I will repeat it back to you: &quot;)  print(message) </code></li>
+</ul>
+<h2 id="使用-int来获取数值输入">使用 <code>int()</code>来获取数值输入</h2>
+<p>使用函数<code>input()</code>时，Python将用户输入解读为字符串。</p>
+<h2 id="求模运算符">求模运算符</h2>
+<h1 id="while循环简介"><code>while循环</code>简介</h1>
+<ul>
+<li>
+<p>和<code>C++ </code>不同的是，<code>Python</code>中的循环结构可以设置一个else语句，也就是当条件不成立的时候，在退出循环前会执行else语句，<code>break</code>退出循环时除外。</p>
+</li>
+<li>
+<p><code>while循环</code>感觉没什么好说的，下边给出一些<code>字典</code>和<code>列表</code>中用到<code>while循环</code>的例子：</p>
+</li>
+<li>
+<p><em>如下是一个删除列表中特定元素的循环</em><br>
+<code>pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat'] </code><br>
+<code>print(pets) </code><br>
+<code>while 'cat' in pets:</code><br>
+<code>pets.remove('cat') </code><br>
+<code>print(pets) </code></p>
+</li>
+<li>
+<p><em>也可以使用循环来向字典中填充元素</em><br>
+<code>responses = {} </code><br>
+<code># 设置一个标志，指出调查是否继续</code><br>
+<code>polling_active = True </code><br>
+<code>while polling_active: </code><br>
+<code># 提示输入被调查者的名字和回答</code><br>
+<code>name = input(&quot;\nWhat is your name? &quot;) </code><br>
+<code>response = input(&quot;Which mountain would you like to climb someday? &quot;)  </code><br>
+<code># 将答卷存储在字典中</code><br>
+<code>responses[name] = response </code><br>
+<code># 看看是否还有人要参与调查</code><br>
+<code>repeat = input(&quot;Would you like to let another person respond? (yes/ no) &quot;) </code><br>
+<code>if repeat == 'no': </code><br>
+<code>polling_active = False </code><br>
+<code># 调查结束，显示结果</code><br>
+<code>print(&quot;\n--- Poll Results ---&quot;) </code><br>
+<code>for name, response in responses.items(): </code><br>
+<code>print(name + &quot; would like to climb &quot; + response + &quot;.&quot;) </code></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：字典和集合]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-zi-dian/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-zi-dian/">
+        </link>
+        <updated>2023-02-10T08:50:00.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="使用字典">使用字典</h1>
+<ul>
+<li>在Python中，字典是一系列<code>键—值对</code>。每个键都与一个值相关联，你可以使用键来访问与之相关联的值。<strong>可将任何Python对象用作字典中的值。</strong></li>
+<li>在Python中，字典用放在花括号<code>{}</code>中的一系列<code>键—值对</code>表示<br>
+<code>alien_0 = {'color': 'green', 'points': 5} </code><br>
+可以直接创建字典，也可以用内置函数<code>dict()</code>来创建字典。这个函数的参数是<strong>存储双元素的元组或者列表。</strong></li>
+<li>访问字典中的值<br>
+<code>alien_0 = {'color': 'green'} </code><br>
+<code>print(alien_0['color']) </code></li>
+<li>添加<code>键—值对</code><br>
+字典是一种动态结构，可随时在其中添加<code>键—值对</code>。要添加<code>键—值对</code>，可依次指定字典名、用方括号括起的键和相关联的值。<br>
+<strong><code>键—值对</code>的排列顺序与添加顺序不同。Python不关心<code>键—值对</code>的添加顺序，<br>
+而只关心键和值之间的关联关系。</strong> 这或许是因为字典存储时的数据结构。</li>
+</ul>
+<blockquote>
+<p>如果之前有其他编程语言的经验，可能会觉得Python中添加键值对有点过于直白了，它只需要直接指定字典名和键值对。</p>
+</blockquote>
+<ul>
+<li>修改字典中的值<br>
+要修改字典中的值，可依次指定字典名、用方括号括起的键以及与该键相关联的新值。</li>
+<li>删除键—值对<br>
+对于字典中不再需要的信息，可使用del语句将相应的键—值对彻底删除。<br>
+<code> del alien_0['points']</code><br>
+<code>pop(键，默认值)</code>如果键不存在，就弹出默认值，否则删除不存在的条目时，会报错。<br>
+<code>clear()</code>清空字典条目<br>
+<code>del 字典名</code> 直接删除整个字典</li>
+<li>查找字典条目
+<ul>
+<li>成员运算符<code>in</code></li>
+<li><code>get(键，默认值)</code> 不存在则返回默认值，不给出默认值则不返回任何信息</li>
+</ul>
+</li>
+</ul>
+<h1 id="遍历字典">遍历字典</h1>
+<ul>
+<li>遍历所有的键—值对<br>
+<code>user_0 = {  'username': 'efermi',  'first': 'enrico',  'last': 'fermi',  } </code><br>
+<code>for key, value in user_0.items():</code><br>
+<code>print(&quot;\nKey: &quot; + key) </code><br>
+<code>print(&quot;Value: &quot; + value) </code><br>
+方法<code>items()</code>，它返回一个<code>键—值对</code>列表</li>
+<li>遍历字典中的所有键<br>
+<code>for name in favorite_languages.keys(): </code><br>
+<code>print(name.title()) </code><br>
+方法<code>keys()</code>返回一个列表，其中包含字典中的<strong>所有键</strong></li>
+<li>按顺序遍历字典中的所有键<br>
+获取字典的元素时，<strong>获取顺序是不可预测的</strong><br>
+可使用函数<code>sorted()</code>来获得按特定顺序排列的键列表的副本:<br>
+<code>for name in sorted(favorite_languages.keys()): </code><br>
+<code>print(name.title() + &quot;, thank you for taking the poll.&quot;)</code></li>
+<li>遍历字典中的所有值<br>
+方法<code>values()</code>，它返回一个值列表<br>
+<code>for language in favorite_languages.values(): </code><br>
+<code>print(language.title())</code><br>
+为剔除重复项，可使用集合（<code>set</code>）。<br>
+集合类似于列表，但每个元素都必须是<strong>独一无二的</strong><br>
+<code>for language in set(favorite_languages.values()): </code><br>
+<code>print(language.title()) </code></li>
+</ul>
+<h1 id="字典合并">字典合并</h1>
+<ul>
+<li>使用<code>for</code>循环逐个合并</li>
+<li>使用字典的<code>update()</code>方法</li>
+<li>使用<code>dict()</code>方法<br>
+可以手动创建双元素的列表/元组，也可用另一种形式：<code>dicAreas = dict(dicAreas,**dicOthers)</code></li>
+<li>如果两个字典中存在相同的key，那么只会保留一个key</li>
+</ul>
+<h1 id="嵌套">嵌套</h1>
+<h2 id="字典列表">字典列表</h2>
+<p>创建一个列表，其中每一个元素都是一个字典。比如创建一个外星人联队，每一个元素都包含着一个外星人的各项信息的字典。</p>
+<h2 id="在字典中存储列表">在字典中存储列表</h2>
+<p>如上文所说，字典的<code>值</code>可以是Python中的任意数据类型，我们可以把列表存储在字典中。</p>
+<h2 id="字典中嵌套字典">字典中嵌套字典</h2>
+<p>假如要建立一个用户信息存储系统，可以把用户ID作为<code>键</code>，把用户的各项信息编写成一个字典作为<code>值</code></p>
+<h1 id="集合">集合</h1>
+<p>存放一组无序且互不相同的元素。</p>
+<h2 id="集合的创建和访问">集合的创建和访问</h2>
+<ul>
+<li>在<code>大括号</code>里放元素<br>
+<code>set1 = {1,2,3},</code></li>
+<li>使用<code>set(),</code>函数创建集合</li>
+<li>集合的访问<br>
+集合是无序的，也没有<code>键值对</code>，所以要么整体输出，要么使用<code>for</code>循环实现遍历。</li>
+</ul>
+<h2 id="集合的基本操作">集合的基本操作</h2>
+<ul>
+<li>添加元素<br>
+<code>add()</code>参数必须是<strong>不可变的数据</strong>，如果是序列，则将序列整体作为一个元素加入集合<br>
+<code>update()</code>参数序列中的元素拆分<strong>去重</strong>后加入集合，参数<strong>可以是可变的数据</strong></li>
+<li>删除元素<br>
+<code>remove()</code>如果元素不存在，会报错<br>
+<code>discard()</code>如果元素不存在，系统将正常执行，无任何输出<br>
+<code>clear()</code>清空</li>
+<li>成员判断<br>
+<code>in</code></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：IF语句]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-if-yu-ju/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-if-yu-ju/">
+        </link>
+        <updated>2023-02-09T16:34:42.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="条件测试">条件测试</h1>
+<h2 id="检查特定值是否包含在列表中">检查特定值是否包含在列表中</h2>
+<ul>
+<li>要判断特定的值是否已包含在列表中，可使用关键字<code>in</code>。<br>
+<code>&gt;&gt;&gt; requested_toppings = ['mushrooms', 'onions', 'pineapple'] </code><br>
+<code>&gt;&gt;&gt; 'mushrooms' in requested_toppings </code><br>
+<code>True </code><br>
+<code>&gt;&gt;&gt; 'pepperoni' in requested_toppings </code><br>
+<code>False </code></li>
+</ul>
+<h2 id="检查特定值是否不包含在列表中">检查特定值是否不包含在列表中</h2>
+<ul>
+<li>可使用关键字<code>not in</code><br>
+<code>banned_users = ['andrew', 'carolina', 'david'] </code><br>
+<code>user = 'marie' </code><br>
+<code>if user not in banned_users: </code><br>
+<code>print(user.title() + &quot;, you can post a response if you wish.&quot;) </code></li>
+</ul>
+<h1 id="if-语句">if 语句</h1>
+<ul>
+<li>最简单的<code>if</code>语句只有一个测试和一个操作：<br>
+<code>if conditional_test: </code><br>
+<code>do something</code></li>
+<li><code>if-else</code> 语句</li>
+<li><code>if-elif-else</code> 结构<br>
+可以写入很多个<code>elif</code>语句<br>
+<strong>Python并不要求<code>if-elif</code>结构后面必须有<code>else</code>代码块。</strong></li>
+</ul>
+<h1 id="使用-if-语句处理列表">使用 if 语句处理列表</h1>
+<h2 id="确定列表不是空的">确定列表不是空的</h2>
+<ul>
+<li>在<code>if</code>语句中将列表名用在条件表达式中时，Python将在列表至少包含一个元素时返回<code>True</code>，并在列表为空时返回<code>False</code>。</li>
+</ul>
+<h1 id="使用多个列表">使用多个列表</h1>
+<ul>
+<li>Example：当我们需要对一个列表中的元素进行操作的时候可能需要判断这个元素和另一个列表的关系</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：操作列表和元组]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-cao-zuo-lie-biao/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-cao-zuo-lie-biao/">
+        </link>
+        <updated>2023-02-07T13:22:37.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="遍历整个列表">遍历整个列表</h1>
+<ul>
+<li>使用for循环来打印魔术师名单中的所有名字：<br>
+<code>magicians = ['alice', 'david', 'carolina'] </code><br>
+<code>for magician in magicians: </code><br>
+<code>print(magician)</code></li>
+</ul>
+<h1 id="避免缩进错误">避免缩进错误</h1>
+<p>Python根据缩进来判断代码行与前一个代码行的关系。<br>
+为避免意外缩进错误，请<strong>只缩进需要缩进的代码。</strong></p>
+<h1 id="创建数值列表">创建数值列表</h1>
+<ul>
+<li>Python函数<code>range()</code>让你能够轻松地<em>生成</em>一系列的数字。<br>
+<code>for value in range(1,5): </code><br>
+<code>print(value) </code><br>
+<strong>这个范围是左闭右开的区间，在编程语言中还是相对常见的</strong></li>
+<li>要创建数字列表，可使用函数<code>list()</code>将<code>range()</code>的结果直接转换为列表。如果将<code>range()</code>作为<code>list()</code>的参数，输出将为一个数字列表。<br>
+<code>numbers = list(range(1,6)) </code><br>
+<code>print(numbers) </code><br>
+这里<code>list()</code>的参数是一个<code>range</code>对象，也可以用来将字符串转换成列表，但是转换结果可能和用户的想象有所区别。</li>
+<li>使用函数range()时，还可<strong>指定步长</strong><br>
+<code>even_numbers = list(range(2,11,2)) </code><br>
+<code>print(even_numbers)</code></li>
+<li>对数字列表执行简单的统计计算<br>
+有几个专门用于处理数字列表的Python函数。<br>
+<code>&gt;&gt;&gt; digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]</code><br>
+<code>&gt;&gt;&gt; min(digits)</code><br>
+<code>0 </code><br>
+<code>&gt;&gt;&gt; max(digits)</code><br>
+<code>9 </code><br>
+<code>&gt;&gt;&gt; sum(digits)</code><br>
+<code>45</code></li>
+<li>列表解析<br>
+列表解析将for循环和创建新元素的代码合并成一行，并自动附加新元素。<br>
+<code>squares = [value**2 for value in range(1,11)] </code><br>
+<code>print(squares) </code></li>
+<li>如果要用<code>input()</code>来创建一个列表的话，可以使用<code>eval()</code>函数来自动转换数据类型。</li>
+</ul>
+<h1 id="使用列表的一部分">使用列表的一部分</h1>
+<p>以处理列表的部分元素——Python称之为<code>切片</code>。</p>
+<ul>
+<li>要创建切片，可指定要使用的第一个元素和最后一个元素的索引。<br>
+<code>players = ['charles', 'martina', 'michael', 'florence', 'eli'] </code><br>
+<code>print(players[0:3]) </code><br>
+<code>players = ['charles', 'martina', 'michael', 'florence', 'eli'] </code><br>
+<code>print(players[-3:]) </code><br>
+<strong>区间范围同样是左闭右开</strong></li>
+<li>遍历切片<br>
+<code>players = ['charles', 'martina', 'michael', 'florence', 'eli'] </code><br>
+<code>print(&quot;Here are the first three players on my team:&quot;) </code><br>
+<code>for player in players[:3]: </code><br>
+<code>print(player.title()) </code></li>
+</ul>
+<h1 id="复制列表">复制列表</h1>
+<p>要复制列表，可<strong>创建一个包含整个列表的<code>切片</code></strong>，方法是同时省略起始索引和终止索引（<code>[:]</code>）。<br>
+这让Python创建一个始于第一个元素，终止于最后一个元素的切片，即复制整个列表。<br>
+<code>my_foods = ['pizza', 'falafel', 'carrot cake']</code><br>
+<code>friend_foods = my_foods[:] </code><br>
+<strong>倘若我们只是简单地将my_foods赋给friend_foods，就不能得到两个列表。</strong><br>
+<code>#这行不通</code><br>
+<code>friend_foods = my_foods</code><br>
+这里将<code>my_foods</code>赋给<code>friend_foods</code>，而不是将<code>my_foods</code>的副本存储到<code>friend_foods</code>这种语法实际上是让Python将新变量<code>friend_foods</code>关联到包含在<code>my_foods</code>中的列表，因此这两个变量都指向同一个列表。</p>
+<blockquote>
+<p>我个人在这理解，如果直接赋值的话，其实就相当于是浅拷贝，而使用全部切片来赋值，相当于是创建了一个新的列表，而后遍历旧列表中的元素，复制到新列表</p>
+</blockquote>
+<h1 id="元组">元组</h1>
+<p>Python将不能修改的值称为不可变的，而不可变的列表被称为<code>元组</code>。</p>
+<ul>
+<li>元组看起来犹如列表，但使用<code>圆括号</code>而不是<code>方括号</code>来标识。<br>
+不带<code>()</code>的多个数据，用<code>,</code>隔开也可以定义元组。<br>
+<strong>值得注意的是，当元组只有一个元素时，一定要在元素后加<code>,</code>，否则Python会把它看作是一个单个的数据。</strong><br>
+<strong>元组是不可变的列表，因此Python指出不能给元组的元素赋值</strong></li>
+<li>遍历元组中的所有值<br>
+和列表一样</li>
+<li>修改元组变量<br>
+虽然不能修改元组的元素，但可以给存储元组的变量赋值。</li>
+<li>转换函数
+<ul>
+<li>元组和列表之间的转换<br>
+<code>tuple()</code>列表转换为元组<br>
+<code>list()</code>元组转换为列表</li>
+<li>字符串和列表之间的转换<br>
+使用<code>list()</code>来转换字符串，<strong>字符串会被拆分成最小单元</strong>。</li>
+<li><code>split()</code><br>
+用指定的分隔符来分隔字符串，并生成列表</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：列表简介]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-lie-biao-jian-jie/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-lie-biao-jian-jie/">
+        </link>
+        <updated>2023-02-07T08:39:55.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="列表">列表</h1>
+<p>列表由一系列按特定顺序排列的元素组成。<br>
+在Python中，用方括号<code>[]</code>来表示列表，并用逗号来分隔其中的元素。</p>
+<h2 id="访问列表元素">访问列表元素</h2>
+<ul>
+<li>列表是<strong>有序集合</strong>，因此要访问列表的任何元素，只需将该元素的位置或索引告诉Python即可。</li>
+<li>要访问列表元素，可指出列表的名称，再指出元素的索引，并将其放在方括号内。</li>
+<li>在Python中，第一个列表元素的索引为0，而不是1。</li>
+<li>Python为访问最后一个列表元素提供了一种特殊语法。通过将索引指定为-1，可让Python返回最后一个列表元素，这种约定也适用于其他负数索引.</li>
+<li>运算符<code>in</code>和 <code>not in</code><br>
+这两个运算符被称作成员运算符，用来判断指定的元素是否在列表中。</li>
+<li><code>index()</code>方法用来在列表中查找指定的元素，<strong>若存在多个指定元素，则返回最小的索引值</strong>，如果没有的话则会抛出错误，可以预先确认元素是否在列表中。</li>
+<li><code>count()</code>用来统计并返回列表中指定元素的个数，如果没有，则返回0。</li>
+</ul>
+<h2 id="修改-添加和删除元素">修改、添加和删除元素</h2>
+<ul>
+<li>要修改列表元素，可指定列表名和要修改的元素的索引，再指定该元素的新值</li>
+<li>在列表末尾添加元素 <code>append()</code></li>
+<li>在列表中插入元素<code>insert()</code></li>
+<li>使用del语句删除元素 <code>del motorcycles[0] </code></li>
+<li>使用方法<code>pop()</code>删除元素，<code>pop()</code> 会返回被删除的元素<br>
+可以使用<code>pop()</code>来删除列表中任何位置的元素，只需在括号中指定要删除的元素的索引即可：<code>motorcycles.pop(0) </code></li>
+<li>根据值删除元素 如果你只知道要删除的元素的值，可使用方法<code>remove()</code>。<br>
+<strong>方法remove()只删除第一个指定的值。如果要删除的值可能在列表中出现多次，就需要使用循环来判断是否删除了所有这样的值。</strong></li>
+</ul>
+<h2 id="组织列表">组织列表</h2>
+<ul>
+<li>使用方法<code>sort()</code>对列表进行<strong>永久性排序</strong><br>
+可通过向<code>sort()</code>方法传递参数<code>reverse=True</code>，实现反向排序：<code>cars.sort(reverse=True)</code></li>
+<li>使用函数<code>sorted()</code>对列表进行<strong>临时排序</strong><br>
+也可向函数<code>sorted()</code>传递参数<code>reverse=True。</code></li>
+<li>倒着打印列表<br>
+要反转列表元素的排列顺序，可使用方法<code>reverse()</code>:<code>cars.reverse() </code><br>
+方法<code>reverse()</code><strong>永久性</strong>地修改列表元素的排列顺序，但可随时恢复到原来的排列顺序，为此只需对列表再次调用<code>reverse()</code>即可</li>
+<li>确定列表的长度<br>
+使用函数<code>len()</code>可快速获悉列表的长度。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python笔记：变量和简单数据类型]]></title>
+        <id>https://goldenwindrandy.github.io/post/python-bi-ji-bian-liang/</id>
+        <link href="https://goldenwindrandy.github.io/post/python-bi-ji-bian-liang/">
+        </link>
+        <updated>2023-02-06T13:34:38.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="变量">变量</h1>
+<h2 id="变量的命名">变量的命名</h2>
+<ul>
+<li>只能包含字母、数字和下划线。可以字母或下划线开头，但不能以数字打头。</li>
+<li>变量名不能包含空格，但可以使用下划线来分隔其中的单词。</li>
+<li>不要用Python关键字和函数名用作变量名。</li>
+<li>简短又具有描述性，慎用大写字母I和大写字母O。</li>
+</ul>
+<h1 id="字符串">字符串</h1>
+<p>在Python中，用括号引起的都是字符串。字符串有四种定义方式：</p>
+<p><strong>其中的引号可以是单引号，可以是双引号，也可以是三单引号，三双引号</strong>，这种灵活性可以允许你在字符串中包含引号和撇号，其中三单引号和三双引号可以<strong>跨行</strong>。</p>
+<ul>
+<li>内置的字符串处理函数<br>
+这些字符串处理函数数量较多，不再一一介绍。值得注意的是Python提供的字符使用的是<strong>Unicode编码标准</strong>。
+<ul>
+<li>字符串查找类方法<br>
+<code>find() rfind()</code>结果不存在时返回-1<br>
+<code>index() rindex()</code>结果不存在时抛出异常<br>
+<code>count()</code>返回一个字符串在另一个字符串中出现的次数，不存在则返回0</li>
+<li>字符串分隔类方法<br>
+<code>split() rsplit()</code>可指定最大分隔次数<br>
+<code>partition() rpartition()</code>分隔为三部分</li>
+<li>字符串连接类方法<br>
+<code>join()</code>连接列表中的多个字符串</li>
+<li>字符串大小写转换方法<br>
+使用方法修改字符串的大小写<br>
+<code>title()</code>以首字母大写的方式显示<strong>每个</strong>单词，即将每个单词的首字母都改为大写。<br>
+<code>lower()、upper()、capitalize()</code><br>
+<em>值得一提的是，<code>lower()、upper()</code>等方法并不改变调用对象的值</em>使用方法修改字符串的大小写<br>
+<code>title()</code>以首字母大写的方式显示<strong>每个</strong>单词，即将每个单词的首字母都改为大写。<br>
+<code>lower()、upper()、capitalize()</code><br>
+<em>值得一提的是，<code>lower()、upper()</code>等方法并不改变调用对象的值</em></li>
+<li>字符串替换方法<br>
+<code>replace()</code> 替换所有的字符串，不修改原字符串</li>
+<li>删除空白<br>
+<code>strip() </code>剔除字符串两端的空白<br>
+<code>lstrip()</code> 剔除字符串开头的空白<br>
+<code>rstrip() </code>剔除字符串末尾的空白</li>
+<li>判断字符串是否以指定字符开始或结束方法<br>
+<code>startwith() endwith()</code></li>
+<li>判断字符串类型方法</li>
+<li>字符串排版方法<br>
+相比用这些排版方法，我更喜欢用<code>format()</code>格式化</li>
+</ul>
+</li>
+<li>合并（拼接）字符串<br>
+Python使用加号（<code>+</code>）来合并字符串。<br>
+使用<code>*</code>来复制字符串，比如&quot;Tom*3&quot;，结果为&quot;TomTomTom&quot;。</li>
+<li>使用制表符或换行符来添加空白<br>
+在编程中，空白泛指任何非打印字符，如空格、制表符和换行符。<br>
+要在字符串中添加制表符，可使用字符组合<code>\t</code><br>
+要在字符串中添加换行符，可使用字符组合<code>\n</code></li>
+<li><code>format()</code>格式化<br>
+<code>format()</code>中有多个格式设置项，分别是，<code>填充字符</code>、<code>对齐方式</code>、<code>宽度</code>、<code>小数保留位数</code>。
+<blockquote>
+<p>Eg:&quot;{:*^20}&quot;.format(&quot;Mike&quot;)</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="数字">数字</h1>
+<ul>
+<li>Python使用两个乘号表示乘方运算</li>
+<li><code>str()</code>，它让Python将非字符串值表示为字符串</li>
+<li>内置的数值运算操作符<br>
+<code>//</code> 整数除法 采用<strong>向下取整</strong>的方式<br>
+<code>**</code> 乘方，操作数可以是实数</li>
+<li>math库<br>
+引入math库：<br>
+1、<code>import math</code><br>
+2、<code>from math import&lt;函数名&gt;</code> / <code>from math import *</code><br>
+math库中有四个数学常数和一些数值函数可以使用</li>
+</ul>
+<h1 id="注释">注释</h1>
+<p>在Python中，注释用井号（<code>#</code>）标识，井号后面的内容都会被Python解释器忽略。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown 相关]]></title>
+        <id>https://goldenwindrandy.github.io/post/markdown-xiang-guan/</id>
+        <link href="https://goldenwindrandy.github.io/post/markdown-xiang-guan/">
+        </link>
+        <updated>2023-01-25T13:55:24.000Z</updated>
+        <content type="html"><![CDATA[<p>原本打算搬运一下的，但是我写的文章格式就是Markdown，所以在展示语法的时候会有一点不方便，搬运一下网址吧，这个写的还挺好的。</p>
+<p>https://www.iculture.cc/knowledge/pig=31120</p>
+]]></content>
+    </entry>
+</feed>
